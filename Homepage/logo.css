@@ -1,0 +1,27 @@
+@import url(../Conf/shrVariables.css);
+
+/* +-+-+ FF LOGO +-+-+ */
+@-moz-document url("about:newtab"), url("about:home") {
+  .logo-and-wordmark-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .logo-and-wordmark-wrapper .logo-and-wordmark {
+    padding: var(--shr-space-xl);
+    display: flex;
+    flex-direction: row;
+    gap: var(--shr-space-lg);
+  }
+
+  .logo-and-wordmark-wrapper .logo-and-wordmark::after {
+    content: "Firefox";
+    font-family: var(--shr-font-family-base);
+    font-size: var(--shr-h1-font-size);
+  }
+
+  .logo-and-wordmark-wrapper .logo-and-wordmark .wordmark {
+    display: none !important;
+  }
+}

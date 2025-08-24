@@ -1,0 +1,29 @@
+@import url(../Conf/shrVariables.css);
+
+/* +-+-+ PINS GRID +-+-+ */
+@-moz-document url("about:newtab"), url("about:home") {
+  .top-sites-list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--shr-space-lg);
+  }
+
+  .top-site-outer,
+  .top-site-icon {
+    background-color: transparent !important;
+  }
+
+  .top-site-outer:is(.active, :focus, :hover),
+  .tile {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .top-site-outer:is(.active, :focus, :hover) .tile {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .personalizeButtonWrapper {
+    display: none !important;
+  }
+}

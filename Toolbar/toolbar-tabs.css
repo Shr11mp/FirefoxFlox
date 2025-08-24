@@ -1,0 +1,66 @@
+@import url(../Conf/shrVariables.css);
+
+/* +-+-+ TOP TABS +-+-+ */
+.tabbrowser-tab:not([selected]):hover > .tab-stack > .tab-background {
+  background-color: rgba(var(--shr-accent-color), 0.7) !important;
+  border-radius: var(--shr-border-radius-base) !important;
+}
+
+.tabbrowser-tab {
+  margin-left: var(--shr-space-base) !important;
+}
+
+.tabbrowser-tab:not([visuallyselected="true"]),
+.tabbrowser-tab:-moz-lwtheme {
+  color: rgba(var(--shr-second-tab-text-color), 1) !important;
+}
+
+tab .tab-content,
+tab .tab-background,
+tab .tab-background::before,
+tab .tab-background::after {
+  transition: var(--shr-transition-base) !important;
+}
+
+tab[selected="true"] .tab-content {
+  color: rgba(var(--shr-tab-text-color), 1) !important;
+}
+
+tab[selected="true"] .tab-background {
+  position: relative;
+  background: transparent !important;
+  border-radius: var(--shr-border-radius-base) !important;
+}
+
+tab[selected="true"] .tab-background::before,
+tab[selected="true"] .tab-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--shr-border-radius-base) !important;
+  box-shadow: none !important;
+}
+
+tab[selected="true"] .tab-background::before {
+  background-image: linear-gradient(
+    15deg,
+    red 0%,
+    rgba(var(--shr-accent-color)) 50%,
+    blue 100%
+  );
+  border-radius: var(--shr-border-radius-base) !important;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+tab[selected="true"] .tab-background::after {
+  top: var(--shr-border-width-base);
+  left: var(--shr-border-width-base);
+  background: rgba(var(--shr-accent-color), 1) !important;
+  width: calc(100% + var(--shr-border-width-base) * -2);
+  height: calc(100% + var(--shr-border-width-base) * -2);
+  opacity: 0.6;
+}

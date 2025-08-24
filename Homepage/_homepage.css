@@ -1,0 +1,17 @@
+@import url(../Conf/shrVariables.css);
+
+/* +-+-+ BACKGROUND +-+-+ */
+@-moz-document url("about:newtab"), url("about:home") {
+  body.activity-stream {
+    margin-top: calc(var(--shr-tabsbar-height) * -1) !important;
+    padding-top: var(--shr-tabsbar-height) !important;
+
+    background: rgba(var(--shr-dark-color), 1) !important;
+    background: var(--shr-background-main-img) !important;
+    background-attachment: fixed !important;
+    background-position-y: calc(var(--shr-tabsbar-height) * -1) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-blend-mode: darken !important;
+  }
+}

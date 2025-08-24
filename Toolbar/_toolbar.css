@@ -1,0 +1,48 @@
+@import url(../Conf/shrVariables.css);
+
+#urlbar .urlbar-icon {
+  fill: var(--shr-toolbar-color) !important;
+}
+
+.browser-toolbox-background,
+#PersonalToolbar,
+toolbar#nav-bar {
+  background: none !important;
+}
+
+.browser-toolbox-background {
+  will-change: initial;
+}
+
+toolbox#navigator-toolbox {
+  --box-shadow-tab: none;
+
+  background-color: rgba(var(--shr-dark-color), 1) !important;
+  background-image: var(--shr-background-main-img) !important;
+  background-attachment: fixed !important;
+  background-position-y: top !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+  font-family: var(--shr-font-family-base) !important;
+  font-weight: bold !important;
+
+  border-bottom: var(--shr-border-width-base) solid rgb(var(--shr-tab-color)) !important;
+}
+
+#PersonalToolbar {
+  color: rgba(var(--shr-light-color), 1) !important;
+  padding-bottom: var(--shr-space-base) !important;
+  border-bottom: var(--shr-border-width-base) solid rgb(var(--shr-tab-color)) !important;
+}
+
+toolbar#nav-bar {
+  padding-bottom: 4px !important;
+}
+
+:root:-moz-lwtheme-brighttext,
+.sidebar-panel[lwt-sidebar-brighttext],
+body[lwt-sidebar-brighttext] {
+  --main-bgcolor: var(--shr-dark-color);
+  --transparent-bgcolor: var(--shr-dark-color);
+}

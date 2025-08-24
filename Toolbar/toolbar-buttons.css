@@ -1,0 +1,48 @@
+@import url(../Conf/shrVariables.css);
+
+/* +-+-+ NAV BUTTONS +-+-+ */
+.toolbarbutton-badge-stack,
+.toolbarbutton-icon {
+  border-radius: var(--shr-border-radius-pill) !important;
+  transition: var(--shr-transition-base) !important;
+}
+
+.toolbarbutton-icon::before,
+.toolbarbutton-icon::after {
+  border-radius: var(--shr-border-radius-pill);
+}
+
+#PlacesToolbarItems > * {
+  transition: var(--shr-transition-base);
+}
+
+#forward-button[disabled="true"] {
+  margin-left: -36px !important;
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+#forward-button[wasdisabled="true"] {
+  margin-left: 0 !important;
+  opacity: 1 !important;
+}
+
+.tab-close-button {
+  transition: var(--shr-transition-base) !important;
+  border-radius: var(--shr-border-radius-pill) !important;
+}
+
+.titlebar-buttonbox-container .titlebar-buttonbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2px !important;
+}
+
+.titlebar-buttonbox-container .titlebar-button {
+  height: var(--tab-min-height);
+  width: var(--tab-min-height);
+  border-radius: var(--shr-border-radius-pill);
+  transition: var(--shr-transition-base);
+}
