@@ -1,5 +1,6 @@
 @import url(../Conf/shrVariables.css);
 
+/* +-+-+ BACKGROUND +-+-+ */
 #urlbar .urlbar-icon {
   fill: var(--shr-toolbar-color) !important;
 }
@@ -21,6 +22,7 @@ toolbox#navigator-toolbox {
   background-image: var(--shr-background-main-img) !important;
   background-attachment: fixed !important;
   background-position-y: top !important;
+  background-position-x: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 

@@ -1,4 +1,6 @@
 :root {
+  --shr-file-icon: url(../Icons/file.png);
+
   --shr-tabsbar-height: 124px;
 
   --shr-background-main-img: url(../Wallpapers/fox.jpg);

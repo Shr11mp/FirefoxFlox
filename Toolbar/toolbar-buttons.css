@@ -1,19 +1,47 @@
 @import url(../Conf/shrVariables.css);
 
 /* +-+-+ NAV BUTTONS +-+-+ */
-.toolbarbutton-badge-stack,
-.toolbarbutton-icon {
+hbox#nav-bar-customization-target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbarbutton-badge-stack {
   border-radius: var(--shr-border-radius-pill) !important;
   transition: var(--shr-transition-base) !important;
 }
 
+.toolbarbutton-icon,
 .toolbarbutton-icon::before,
 .toolbarbutton-icon::after {
   border-radius: var(--shr-border-radius-pill);
 }
 
-#PlacesToolbarItems > * {
+.toolbarbutton-icon {
   transition: var(--shr-transition-base);
+}
+
+#sidebar-button,
+#back-button,
+#forward-button,
+#stop-reload-button,
+#unified-extensions-button {
+  padding: 0 !important;
+  margin: 0 var(--toolbarbutton-outer-padding) !important;
+  height: fit-content;
+  width: fit-content;
+  border-radius: var(--shr-border-radius-pill);
+  overflow: hidden;
+
+  > *,
+  > * > .toolbarbutton-icon {
+    border-radius: 0px !important;
+  }
+}
+
+#sidebar-button {
+  margin-left: var(--toolbar-start-end-padding) !important;
 }
 
 #forward-button[disabled="true"] {

@@ -1,6 +1,10 @@
 @import url(../Conf/shrVariables.css);
 
 /* +-+-+ TOP TABS +-+-+ */
+hbox.titlebar-spacer {
+  width: 0px !important;
+}
+
 .tabbrowser-tab:not([selected]):hover > .tab-stack > .tab-background {
   background-color: rgba(var(--shr-accent-color), 0.7) !important;
   border-radius: var(--shr-border-radius-base) !important;
