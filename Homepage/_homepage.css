@@ -5,13 +5,25 @@
   body.activity-stream {
     margin-top: calc(var(--shr-tabsbar-height) * -1) !important;
     padding-top: var(--shr-tabsbar-height) !important;
+  }
+
+  .activity-stream .outer-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .activity-stream .outer-wrapper::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--shr-tabsbar-height) * -1);
+    left: 0;
+    width: 100%;
+    height: calc(var(--shr-tabsbar-height) + 100%);
 
     background: rgba(var(--shr-dark-color), 1) !important;
     background: var(--shr-background-main-img) !important;
-    background-attachment: fixed !important;
-    background-position-y: calc(var(--shr-tabsbar-height) * -1) !important;
+    background-position: top !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background-blend-mode: darken !important;
   }
 }
