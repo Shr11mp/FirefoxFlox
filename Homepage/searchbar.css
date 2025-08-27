@@ -1,0 +1,65 @@
+@import url(../Conf/shrVariables.css);
+
+/* +-+-+ SEARCHBAR +-+-+ */
+@-moz-document url("about:newtab"), url("about:home") {
+  .search-wrapper button.search-handoff-button {
+    border-radius: var(--shr-border-radius-pill) !important;
+    transition: var(--shr-transition-base);
+    transition-property: box-shadow, background-color;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 0px !important;
+    box-shadow: none !important;
+    backdrop-filter: blur(var(--shr-border-radius-base));
+  }
+
+  .search-wrapper:hover button.search-handoff-button {
+    box-shadow: var(--shr-box-shadow) !important;
+  }
+
+  .search-wrapper:focus button.search-handoff-button,
+  .search-wrapper:focus-within button.search-handoff-button,
+  .search-wrapper.fake-focus button.search-handoff-button {
+    box-shadow: var(--shr-box-shadow) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .search-wrapper .search-inner-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  .search-wrapper .search-inner-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-image: linear-gradient(
+      15deg,
+      rgb(var(--shr-orange-color)) 0%,
+      rgb(var(--shr-accent-color)) 50%,
+      rgb(var(--shr-purple-color)) 100%
+    );
+    border-radius: var(--shr-border-radius-pill);
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .search-wrapper:focus .search-inner-wrapper::before,
+  .search-wrapper:focus-within .search-inner-wrapper::before,
+  .search-wrapper.fake-focus .search-inner-wrapper::before {
+    opacity: 0.25;
+  }
+
+  .fake-textbox {
+    font-family: var(--shr-font-family-base);
+    font-size: 0 !important;
+  }
+
+  .fake-textbox::after {
+    content: var(--shr-searchbox-txt);
+    font-size: var(--shr-font-size-base);
+  }
+}

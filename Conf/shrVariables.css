@@ -1,18 +1,28 @@
 :root {
   --shr-file-icon: url(../Icons/file.png);
 
+  --shr-homepage-title: "Articfox";
+  --shr-searchbox-txt: " ฅ(^•ﻌ•^)ฅ ";
+
   --shr-tabsbar-height: 124px;
 
-  --shr-background-main-img: url(../Wallpapers/fox.jpg);
+  --shr-background-main-img: url(../Wallpapers/articfox.jpg);
 
   --shr-dark-color: 38, 14, 28;
   --shr-accent-color: 50, 34, 46;
   --shr-tab-color: 240, 240, 244;
   --shr-tab-text-color: 255, 255, 255;
 
+  --shr-orange-color: 255, 119, 17;
+  --shr-purple-color: 119, 85, 187;
+
+  --shr-box-shadow: var(--shr-box-shadow-color, #fff) 0px 0px 6px -1px;
+
   --shr-second-tab-text-color: 127, 127, 127;
   --shr-light-color: 255, 255, 255;
 
+  --shr-space-xs: 0.1rem;
+  --shr-space-sm: 0.25rem;
   --shr-space-base: 0.5rem;
   --shr-space-lg: 1rem;
   --shr-space-xl: 1.5rem;
@@ -24,7 +34,14 @@
   --shr-border-radius-pill: 100px;
 
   --shr-font-family-base: "Courier New", Courier, monospace;
-  --shr-h1-font-size: 48px;
 
-  --shr-transition-base: all 190ms ease-in-out;
+  --shr-h1-font-size: 48px;
+  --shr-h2-font-size: 40px;
+
+  --shr-font-size-lg: 16px;
+  --shr-font-size-base: 14px;
+  --shr-font-size-sm: 13px;
+
+  --shr-transition-timing: 190ms;
+  --shr-transition-base: all var(--shr-transition-timing) ease-in-out;
 }

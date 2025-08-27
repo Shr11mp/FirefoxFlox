@@ -16,7 +16,7 @@
   }
 
   .logo-and-wordmark-wrapper .logo-and-wordmark::after {
-    content: "Firefox";
+    content: var(--shr-homepage-title);
     font-family: var(--shr-font-family-base);
     font-size: var(--shr-h1-font-size);
   }

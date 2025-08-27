@@ -10,6 +10,18 @@
   .activity-stream .outer-wrapper {
     position: relative;
     overflow: hidden;
+
+    @media (min-height: 550px) {
+      padding-bottom: calc(var(--shr-space-xl) * 2 + 4vh) !important;
+    }
+
+    @media (min-height: 700px) {
+      padding-bottom: calc(var(--shr-space-xl) * 3.5 + 4.5vh) !important;
+    }
+
+    @media (min-height: 900px) {
+      padding-bottom: calc(var(--shr-space-xl) * 4 + 5.5vh) !important;
+    }
   }
 
   .activity-stream .outer-wrapper::before {
@@ -25,5 +37,10 @@
     background-position: top !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+  }
+
+  .activity-stream .outer-wrapper > .newtab-main {
+    min-height: 100% !important;
+    justify-content: end !important;
   }
 }
