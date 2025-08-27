@@ -1,6 +1,7 @@
 @import url(../Conf/shrVariables.css);
 
 /* +-+-+ NAV BUTTONS +-+-+ */
+#tabbrowser-arrowscrollbox-periphery,
 hbox#nav-bar-customization-target {
   display: flex;
   align-items: center;
@@ -22,11 +23,14 @@ hbox#nav-bar-customization-target {
   transition: var(--shr-transition-base);
 }
 
+#tabs-newtab-button,
+#reload-button,
 #sidebar-button,
 #back-button,
 #forward-button,
-#stop-reload-button,
+#stop-button,
 #unified-extensions-button {
+  transition: var(--shr-transition-base);
   padding: 0 !important;
   margin: 0 var(--toolbarbutton-outer-padding) !important;
   height: fit-content;
@@ -45,13 +49,13 @@ hbox#nav-bar-customization-target {
 }
 
 #forward-button[disabled="true"] {
-  margin-left: -36px !important;
+  margin-left: calc(-36px - var(--toolbarbutton-outer-padding)) !important;
   opacity: 0 !important;
   pointer-events: none;
 }
 
 #forward-button[wasdisabled="true"] {
-  margin-left: 0 !important;
+  margin-left: var(--toolbarbutton-outer-padding) !important;
   opacity: 1 !important;
 }
 
