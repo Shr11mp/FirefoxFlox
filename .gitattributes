@@ -1,0 +1,5 @@
+# Exclude heavy stuff from GitHub's auto ZIP
+Screenshots/ export-ignore
+
+# Exclude GitHub-specific/config files
+.gitattributes export-ignore
