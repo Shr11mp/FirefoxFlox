@@ -78,3 +78,7 @@ hbox#nav-bar-customization-target {
   border-radius: var(--shr-border-radius-pill);
   transition: var(--shr-transition-base);
 }
+
+.titlebar-buttonbox-container .titlebar-button:last-child {
+  margin-right: var(--toolbar-start-end-padding);
+}

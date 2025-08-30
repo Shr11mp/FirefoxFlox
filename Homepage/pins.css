@@ -128,4 +128,28 @@
   .personalizeButtonWrapper {
     display: none !important;
   }
+
+  .top-site-button .top-site-icon {
+    background-size: contain !important;
+  }
+
+  .top-site-button[href*="https://www.youtube.com"] .top-site-icon
+  {
+    background-image: url(../Icons/youtube.png) !important;
+  }
+
+  .top-site-button[href*="https://x.com"] .top-site-icon
+  {
+    background-image: url(../Icons/x.png) !important;
+  }
+
+  .top-site-button[href*="https://www.imdb.com"] .top-site-icon
+  {
+    background-image: url(../Icons/imdb.png) !important;
+  }
+
+  .top-site-button[href*="https://open.spotify.com"] .top-site-icon
+  {
+    background-image: url(../Icons/spotify.png) !important;
+  }
 }

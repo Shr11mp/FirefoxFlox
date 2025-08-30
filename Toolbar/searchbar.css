@@ -1,0 +1,141 @@
+@import url(../Conf/shrVariables.css);
+
+/* +-+-+ SEARCHBAR +-+-+ */
+#urlbar {
+  --urlbar-height: 38px;
+  --urlbar-container-height: 38px;
+  --urlbar-container-padding: 3px;
+
+  --urlbar-box-bgcolor: transparent;
+  --urlbar-box-focus-bgcolor: var(--shr-accent-color);
+  --urlbar-icon-border-radius: var(--shr-border-radius-pill);
+
+  top: 48px !important;
+  width: var(--urlbar-width, max-content) !important;
+
+  align-content: center;
+  margin-inline: 0px !important;
+  margin: 0px !important;
+}
+
+#tracking-protection-icon-container,
+#identity-box,
+#identity-icon-box,
+#urlbar-searchmode-switcher,
+#page-action-buttons > hbox {
+  height: 32px !important;
+  transition: var(--shr-transition-base);
+  border-radius: var(--shr-border-radius-pill) !important;
+}
+
+#identity-icon-box {
+  margin-left: 2px !important;
+}
+
+#page-action-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: calc(var(--identity-box-margin-inline, 4px) * 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+#page-action-buttons > hbox {
+  height: var(--urlbar-height, 32px) !important;
+  width: var(--urlbar-height, 32px) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-action-buttons > hbox {
+  height: var(--urlbar-height, 32px) !important;
+  width: var(--urlbar-height, 32px) !important;
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-action-buttons > hbox[hidden="true"] {
+  display: none !important;
+}
+
+#star-button-box #star-button {
+  list-style-image: url(../Icons/starempty.png) !important;
+}
+
+#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"] #star-button {
+  list-style-image: url(../Icons/starfull.png) !important;
+}
+
+#translations-button #translations-button-icon {
+  list-style-image: url(../Icons/translate.png) !important;
+}
+
+#picture-in-picture-button #picture-in-picture-button-icon {
+  list-style-image: url(../Icons/pinpon.png) !important;
+}
+
+#picture-in-picture-button[data-l10n-id="picture-in-picture-urlbar-button-close"]
+  #picture-in-picture-button-icon {
+  list-style-image: url(../Icons/pinpoff.png) !important;
+}
+
+#reader-mode-button #reader-mode-button-icon {
+  list-style-image: url(../Icons/readerview.png) !important;
+}
+
+#taskbar-tabs-button .urlbar-icon {
+  list-style-image: url(../Icons/removetaskbar.png) !important;
+}
+
+#urlbar > .urlbar-input-container {
+  padding: var(--urlbar-container-padding) 9px !important;
+  padding-block: unset !important;
+  padding-inline: unset !important;
+  height: var(--urlbar-height, 38px) !important;
+  width: calc(var(--urlbar-width, max-content) - 18px) !important;
+  margin: 0px 9px !important;
+  border: 0px !important;
+
+  display: flex;
+  align-items: center;
+}
+
+#urlbar > #urlbar-background {
+  transition: var(--shr-transition-base);
+  border-radius: calc(var(--urlbar-height, 38px) * 0.5) !important;
+  background-color: var(--shr-urlbar-bg, rgba(0, 0, 0, 0.5)) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+#urlbar:hover > #urlbar-background,
+#urlbar[breakout-extend="true"] > #urlbar-background {
+  box-shadow: var(--shr-box-shadow) !important;
+}
+
+#urlbar[breakout-extend="true"] > #urlbar-background {
+  --shr-urlbar-bg: rgba(0, 0, 0, 0.7);
+}
+
+#urlbar > .urlbar-input-container > * {
+  --urlbar-height: 32px;
+}
+
+#urlbar .urlbarView {
+  border: 0px !important;
+  border-top: #fff 1px solid !important;
+  margin-inline: 0px !important;
+  margin: 0px 9px !important;
+  width: calc(var(--urlbar-width, max-content) - 18px) !important;
+}
+
+#urlbar .urlbarView .urlbarView-row,
+#urlbar .urlbarView .urlbarView-button {
+  --urlbarView-hover-background: rgba(var(--shr-accent-color), 0.7);
+
+  transition: var(--shr-transition-base);
+  border-radius: var(--shr-border-radius-pill) !important;
+}
